@@ -1,0 +1,27 @@
+/* Стили только для ШАПКИ сайта */
+
+header {
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.header_wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header_wrapper > a {
+  opacity: .7;
+  transition:  opacity .3s, border-bottom-color .3s;
+  border-bottom: 1px solid transparent;
+}
+.header_wrapper > a:hover {
+  opacity: 1;
+  border-bottom-color: white;
+}
+
+.header_wrapper > h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+}

@@ -1,0 +1,99 @@
+/* Стили для модального окна Авторизации/Регистрации */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 15px;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+
+.modal > .modal_window {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  overflow-y: scroll;
+  padding: 15px;
+}
+
+.modal > .modal_window > h3 {
+  color: #1f2023;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal > img {
+  opacity: .7;
+  width: 24px;
+  transition: opacity .3s;
+}
+.modal > img:hover {
+  opacity: 1;
+}
+
+form {
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.field {
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+}
+
+label {
+  color: #1f2023;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 0;
+  background-color: #F3F9FE;
+}
+
+button[type=submit] {
+  background-color: #0984e3;
+  color: #fff;
+  width: 100%;
+}
+
+button.additional {
+  width: 100%;
+  background-color: rgba(9, 132, 227, 0.2);
+  margin-top: 20px;
+}
+
+.checkbox {
+  gap: 10px;
+}
+
+.checkbox label {
+  line-height: 16px;
+}
+
+.checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+#reg {
+  display: none;
+}

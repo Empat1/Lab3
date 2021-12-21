@@ -1,0 +1,29 @@
+/* Стили только для подвала */
+
+footer {
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 15px 40px;
+}
+
+.footer_item {
+  gap: 5px;
+  align-items: baseline;
+}
+
+.footer_item > .name {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .5;
+}
+
+.footer_item > .value {
+  opacity: .7;
+}
+
+.footer_item > a.value:hover {
+  color: lightskyblue;
+}

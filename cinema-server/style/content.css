@@ -1,0 +1,59 @@
+/* Стили только для основной части сайта (КОНТЕНТА) */
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+}
+/* h2:after {
+  content: '';
+  width: 70%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+} */
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.review {
+  gap: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .05);
+}
+
+.review > img {
+  border-radius: 5px;
+  /* box-shadow: 0 4px 10px rgba(255, 255, 255, .15); */
+  height: 200px;
+}
+
+.review_info {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.review_title {
+  width: 100%;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.review_date {
+  width: 100%;
+}
+
+.show_more {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
